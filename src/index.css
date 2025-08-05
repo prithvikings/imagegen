@@ -1,0 +1,20 @@
+
+@import "tailwindcss";
+
+.gradient-button-hover {
+    background: linear-gradient(to right, #fde68a, #f59e0b);
+    transition: background-image 0.3s ease-in-out;
+    height: 4.5rem;
+    border-radius: 9999px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.gradient-button-hover:hover {
+    background: linear-gradient(to right, #f59e0b, #dd8d04, #f3c305);
+}
