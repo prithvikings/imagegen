@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import cyborgImage from "../assets/cyborg.jpg"; // Adjust the path as needed
 import { GoogleGenAI, Modality } from "@google/genai";
-import ShimmerUI from "./ShimmerUI";
-
+import ShimmerUI from "./ShimmerUI"; 
 const ImageGen = () => {
   const [image, setImage] = useState(cyborgImage);
   const [prompt, setPrompt] = useState("");
@@ -10,7 +9,7 @@ const ImageGen = () => {
 
   const imageGen = async () => {
     const ai = new GoogleGenAI({
-      apiKey: "AIzaSyAPhVXxu_wYR7sQRyyj0Yljrn-A3c1-7dY",
+      apiKey: import.meta.env.VITE_GEMINI_API_KEY,
     });
 
     setIsLoading(true); // Start loading
